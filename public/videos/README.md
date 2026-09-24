@@ -1,6 +1,6 @@
 Drop the real hero clip here as exactly:
 
-    oparex-hero.mp4
+    hero-furniture.mp4
 
 Requirements: ~5-10s, muted-friendly (no audio needed), h.264 mp4,
 compressed for web (a few MB, not tens of MB). The Hero component

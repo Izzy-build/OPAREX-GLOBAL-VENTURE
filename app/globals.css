@@ -1,9 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-lilac: #8e76b2;
+  --color-lilac-light: #b7a4d4;
+  --color-lilac-pale: #efe9f6;
+  --color-lilac-dark: #7a6299;
+  --color-cream: #faf7f3;
+  --color-stone: #e7e1d8;
+  --color-charcoal: #211e1b;
+  --color-ink: #2b2723;
+  --color-ink-soft: #5c564e;
+
+  --font-display: var(--font-fraunces), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.8s ease forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
